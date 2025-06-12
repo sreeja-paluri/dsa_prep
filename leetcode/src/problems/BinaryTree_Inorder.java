@@ -15,7 +15,7 @@ public class BinaryTree_Inorder {
     public void inorder(TreeNode root , List<Integer> result){
         if(root == null) return;
         inorder(root.left, result);
-        result.add(root.data);
+        result.add(root.val);
         inorder(root.right, result);
 
     }
